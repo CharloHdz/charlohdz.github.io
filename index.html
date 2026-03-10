@@ -3,25 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Carlos Mario Hernández León</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Carlos | Game Developer & Technical Artist</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>¡Hola, soy Carlos Mario Hernández León!</h1>
-        <p>Desarrollador de videojuegos y programador especializado en Unity</p>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Carlos | Game Developer, VFX Artist & Educador.</h1>
+            <p>Construyendo experiencias interactivas sólidas y formando a la próxima generación de desarrolladores. Desde la estructuración de GDDs y programación avanzada en Unity, hasta la creación de simulaciones visuales en Houdini.</p>
+            
+            <div class="cta-container">
+                <a href="#portafolio" class="btn btn-primary">Ver Proyectos</a>
+                <a href="#lab" class="btn btn-secondary">Descubrir "The Lab"</a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.artstation.com/charlo_hdz">🎨 ArtStation</a>
+                <a href="https://www.linkedin.com/in/charlohdz/">👔 LinkedIn</a>
+                <a href="https://charlo-hdz.itch.io/">👾 Itch.io</a>
+                <a href="https://assetstore.unity.com/account/assets">📦 Asset Store</a>
+            </div>
+        </div>
     </header>
 
-    <section>
-        <h2>Proyectos</h2>
-        <ul>
-            <li>Proyecto 1: Descripción breve y enlace al repositorio</li>
-            <li>Proyecto 2: Descripción breve y enlace al repositorio</li>
-        </ul>
+    <section id="portafolio" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title">Portafolio</h2>
+            
+            <div class="portfolio-controls">
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="game-dev">Game Dev</button>
+                    <button class="filter-btn" data-filter="vfx">VFX & Tech Art</button>
+                    <button class="filter-btn" data-filter="docencia">Docencia</button>
+                </div>
+                <a href="#" id="btn-cv-dynamic" class="btn-cv">📄 Descargar CV General</a>
+            </div>
+
+            <div class="grid">
+                
+                <div class="card portfolio-card" data-category="game-dev">
+                    <img src="https://picsum.photos/seed/code/400/200" alt="Code N Learn" class="card-img">
+                    <div class="card-content">
+                        <h3>Code N' Learn (Reboot & GDD)</h3>
+                        <p>Rediseño completo y estructuración del Game Design Document para el primer nivel.</p>
+                        <div class="tags">
+                            <span class="tag">#GameDesign</span>
+                            <span class="tag">#C#</span>
+                            <span class="tag">#Unity</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="#">🎨 ArtStation</a>
+                            <a href="#">👔 LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card portfolio-card" data-category="game-dev">
+                    <img src="https://picsum.photos/seed/jam/400/200" alt="Game Jams" class="card-img">
+                    <div class="card-content">
+                        <h3>Game Jams & Prototipos</h3>
+                        <p>Juegos desarrollados bajo presión de tiempo y prototipado rápido junto a mi equipo en Charlo's Workshop.</p>
+                        <div class="tags">
+                            <span class="tag">#GameJam</span>
+                            <span class="tag">#Prototyping</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="#">👾 Itch.io</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card portfolio-card" data-category="vfx">
+                    <img src="https://picsum.photos/seed/vfx/400/200" alt="Mardini" class="card-img">
+                    <div class="card-content">
+                        <h3>Mardini 2026: Daily Art</h3>
+                        <p>Colección de creaciones diarias demostrando flexibilidad y generación procedimental.</p>
+                        <div class="tags">
+                            <span class="tag">#Houdini</span>
+                            <span class="tag">#VFX</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="#">🎨 ArtStation</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="lab" class="lab-section">
+        <div class="container">
+            <h2 class="section-title">The Lab 🔬</h2>
+            <p class="section-subtitle">Mi espacio de investigación y desarrollo. Herramientas, scripts y sistemas diseñados para optimizar el pipeline.</p>
+
+            <div class="grid">
+                
+                <div class="card lab-card">
+                    <img src="https://picsum.photos/seed/noise/400/200" alt="Noise Studio" class="card-img">
+                    <div class="card-content">
+                        <h3>Noise Studio</h3>
+                        <p>Generador de ruido procedural en tiempo real. Previsualiza y exporta texturas complejas para terrenos y shaders en el motor.</p>
+                        
+                        <div class="price-row">
+                            <span class="price-tag">Free / Open Source</span>
+                            <span class="stars">★★★★★ (12)</span>
+                        </div>
+
+                        <div class="tags">
+                            <span class="tag">#Tool</span>
+                            <span class="tag">#Procedural</span>
+                            <span class="tag">#Unity</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="#">📦 Asset Store</a>
+                            <a href="#">⚙️ Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card lab-card">
+                    <img src="https://picsum.photos/seed/houdini/400/200" alt="Houdini Exporter" class="card-img">
+                    <div class="card-content">
+                        <h3>Houdini to Engine Exporter</h3>
+                        <p>Automatización para el pipeline de arte. Exportación limpia de mallas OBJ y texturas para una integración sin fricciones.</p>
+                        
+                        <div class="price-row">
+                            <span class="price-tag">Free</span>
+                            <span class="stars">★★★★★ (8)</span>
+                        </div>
+
+                        <div class="tags">
+                            <span class="tag">#TechArt</span>
+                            <span class="tag">#Houdini</span>
+                            <span class="tag">#Pipeline</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="#">👔 LinkedIn</a>
+                            <a href="#">⚙️ Descargar Script</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card lab-card">
+                    <img src="https://picsum.photos/seed/spawner/400/200" alt="Modular Spawner" class="card-img">
+                    <div class="card-content">
+                        <h3>Modular Spawner System</h3>
+                        <p>Sistema escalable en C# para la instanciación eficiente de prefabs y control de oleadas. Ideal para bullet hells o generación de niveles.</p>
+                        
+                        <div class="price-row">
+                            <span class="price-tag premium">$4.99</span>
+                            <span class="stars">★★★★☆ (5)</span>
+                        </div>
+
+                        <div class="tags">
+                            <span class="tag">#C#</span>
+                            <span class="tag">#Systems</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="#">📦 Asset Store</a>
+                            <a href="#">👾 Itch.io</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="about-section">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2 class="section-title" style="text-align: left; margin-bottom: 0.5rem;">Detrás del Código y los Nodos</h2>
+                <h3 class="about-subtitle">Soy Carlos, Game Developer y Technical Artist con base en San Luis Potosí.</h3>
+                
+                <p>Mi viaje comenzó con el Diseño y Desarrollo de Videojuegos, pero rápidamente me di cuenta de que mi verdadera pasión está en resolver los rompecabezas técnicos que hacen que un juego cobre vida. Tras graduarme y completar recientemente mi formación en VFX, he desarrollado una visión integral de todo el pipeline de producción.</p>
+                
+                <p>Con años de experiencia impartiendo programación, y ahora enfocándome en materias universitarias como mecánicas avanzadas y red multijugador, disfruto enormemente formar a nuevos desarrolladores y desglosar sistemas complejos en conceptos digeribles.</p>
+                
+                <p>Mi objetivo a largo plazo es la Producción. Mi enfoque actual como Technical Artist no es solo crear cosas que se vean bien, sino desarrollar herramientas, optimizar flujos de trabajo y facilitar la comunicación entre los departamentos de arte y programación.</p>
+                
+                <div class="skills-list">
+                    <span class="skill-tag">Unity</span>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">Houdini</span>
+                    <span class="skill-tag">Shaders</span>
+                    <span class="skill-tag">VFX</span>
+                    <span class="skill-tag">Mentoría</span>
+                </div>
+                
+                <a href="#" class="btn btn-primary" style="margin-top: 2rem; display: inline-block;">📄 Descargar CV General</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">¿Listo para subir de nivel tu proyecto?</h2>
+            <p class="section-subtitle">Ya sea para roles de Technical Art, desarrollo de mecánicas, consultoría o colaboraciones académicas, mi bandeja de entrada siempre está abierta.</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <strong>Ubicación</strong><br>
+                            San Luis Potosí, México (Remoto)
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <strong>Email</strong><br>
+                            charlohdz@hotmail.com
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">👾</span>
+                        <div>
+                            <strong>Discord</strong><br>
+                            @charlo_hdz
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <input type="text" placeholder="Nombre / Estudio" class="form-input" required>
+                    <input type="email" placeholder="Correo Electrónico" class="form-input" required>
+                    <textarea placeholder="¿En qué te puedo ayudar?" class="form-input" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>Contacto: <a href="mailto:charlohdz@hotmail.com">charlohdz@hotmail.com</a></p>
+        <p>© 2026 Carlos "Gem" - Construido con código, café y nodos.</p>
+        <div class="footer-links">
+            <a href="#">🎨 ArtStation</a>
+            <a href="#">👔 LinkedIn</a>
+            <a href="#">👾 Itch.io</a>
+        </div>
     </footer>
+<script src="script.js"></script>
 </body>
 </html>
